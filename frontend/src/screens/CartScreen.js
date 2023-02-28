@@ -16,7 +16,7 @@ export default function CartScreen() {
   const {
     cart: { cartItems },
   } = state;
-
+  // comentariu 3
   const updateCartHandler = async (item, quantity) => {
     const { data } = await axios.get(`/api/products/${item._id}`);
     if (data.countInStock < quantity) {
